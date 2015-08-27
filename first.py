@@ -7,9 +7,8 @@ s = 'module file sample'
 def add(a, b):
     return a+b
 
-print(add(3,4))
-
-
+def main():
+    print(add(3,4))
 
 
 if __name__ == '__main__':
