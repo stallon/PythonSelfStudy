@@ -24,8 +24,6 @@ def main():
     print(substract(3,4))
 
 
-
-
 if __name__ == '__main__':
     main()
 
