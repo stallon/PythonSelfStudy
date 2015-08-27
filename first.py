@@ -14,6 +14,13 @@ def printLargeInteger():
     print('Large Integer = %d' % large_integer)
 
 
+def printStr(str):
+    for c in str:
+        print(c, end=' ')
+    else:
+        print()
+
+
 def main():
     print(add(3,4))
     printLargeInteger()
