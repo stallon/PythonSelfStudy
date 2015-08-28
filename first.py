@@ -31,21 +31,6 @@ def main():
     printStr("stallon")
     print(substract(3,4))
 
-    a = NewTest(1, 2, named=3)
-
-
-class NewTest(object):
-
-    def __new__(cls, *args, **kwargs):
-        new_instance = super(NewTest, cls).__new__(cls, *args, **kwargs)
-        return new_instance
-
-    def __init__(self, a, b, **kwargs):
-        print("__init__ gets called")
-        print("a = {0}, b = {1} ".format(a, b))
-        self.a = a
-        self.b = b
-
 
 if __name__ == '__main__':
     main()
