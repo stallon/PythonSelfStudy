@@ -36,10 +36,28 @@ def fileread():
         print("can't find 't.txt'")
 
 
-def replace():
-    s = ''''''
+def replace(old, new):
 
+    if os.path.exists('sample.txt'):
+        f = open('sample.txt', 'r')
 
+        newlines = []
+
+        for line in f:
+            newline = []
+            words = line.split()
+            for word in words:
+                if word == old:
+                    newline.append(new)
+                else:
+                    newline.append(word)
+            newlines.append(' '.join(newline))
+
+        f.close()
+
+        f = open('replace.txt', 'w')
+        f.write('\n'.join(newlines))
+        f.close()
 
 
 def main():
@@ -57,7 +75,7 @@ the same work in such languages as C."""
     f.close()
 
     fileread()
-
+    replace('show', 'SHOW')
 
 
 
