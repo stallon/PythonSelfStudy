@@ -9,6 +9,7 @@ def add(a, b):
 
 def main():
     print(add(3,4))
+    print('Hello, World!')
 
 
 if __name__ == '__main__':
